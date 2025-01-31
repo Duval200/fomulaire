@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="francais">
+    <head>
+        <meta charset="utf-8">
+        <title>page 1 essaie</title>
+        <link rel="stylesheet" href="duval{.css">
+    </head>
+    <body>
+        <!--formulaire d'essai-->
+        <p>
+            <form  method="post" action="traitement.php">
+                <P>
+                    <fieldset>
+                        <legend> noms et mot de passe </legend>
+                    <p>
+                    <label for="nom"><strong>Nom:</strong></label>
+                    <input type="text" name="nom" id="nom" size="30" maxlength="20" placeholder="Nom complet" required/>
+                    </p>
+                    <p>
+                    <label for="pass"><strong>Password:</strong> </label>
+                    <input type="password" size="30" maxlength="8" placeholder="au moins une majuscule,une miniscule" required/>
+                    </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>votre email et vos essais</legend>
+                    <p>
+                   <label for="email"><strong>e-mail :</strong></label>
+                   <!--contraindre une adreesse de 30 caractere maximun et de 15 caracteres minimun-->
+                   <input type="email" size="30" maxlength="30" minlength="15" required/>   
+                   </p>
+                   <!--nombre d'essais-->
+                   <p>
+                   <label for="Nombre"><strong>Nombre d'essais:</strong></label>
+                   <input type="number" name="Nombre" id="Nombre" size="10" max="2" min="1" step="1" value="1"/>
+                   </p>
+                   </fieldset>
+                   <fieldset>
+                        <legend>Autres informations </legend>
+                   <p>
+                   <label for="Autres"><strong>Autres informations:</strong></label>
+                   <textarea name="Autres" id="Autres" rows="3" cols="30" placeholder="Ici entrer vos informations suplementaires :"></textarea>
+                   </p>
+                   <p><label for="couleur"> couleur:</label>
+                   <input type="color"/><br />
+                   </p>
+                   <p><label for="date"> Date:</label>
+                   <input type="date" required/><br />
+                   </p>
+                   <p>
+                    <label for="search">search:</label>
+                   <input type="search"/>
+                   </p>
+                   </fieldset>
+                   <fieldset>
+                        <legend>Vos choix</legend>
+                      <p><strong> Choix du repas:</strong></P>  
+                  <input type="checkbox" name="tapioca">
+                  <label for="tapioca">tapioca</label>
+
+                  <br />
+                  <input type="checkbox" name="deux oeufs spaguetti" />
+                  <label for="deux oeufs spaguetti"> Deux oeufs spaguetti</label>
+                
+                  <br />
+                  <input type="checkbox" name="riz" />
+                  <label for="riz">Riz </label>
+
+                  <br />
+                  <strong><b>De  quel sexe etes vous ?</b></strong>
+
+                  <br />
+                  <label for="masculin">Masculin</label>
+                  <input type="radio" name="sexe" value="masculin" id="masculin" />
+                  <br />
+                  <label for="feminin"><b>Feminin </b></label>
+                  <input type="radio"  name="sexe" value="feminin " id="feminin"/>
+                  <br />
+                  <label for="transexuel">Transexuel</label>
+                  <input type="radio" name="sexe" value="transexuel" id="transexuel"/>
+                  <br />
+
+                  <b>De quel pays etes vous?</b>
+                  <br />
+                  <!--list de deroulement-->
+                  <label for="pays"class="choix">Nationalite:</label>
+                  <select name="pays" id="pays">
+                    <optgroup label="centre">
+                         <option value="Cameroun" selected>Cameroun</option>
+                         <option value="congo">congo</option>
+                    </optgroup>
+                    <optgroup label="Autres" >
+                         <option value="Nigeria">Nigeria</option>
+                         <option value="Maroc">Maroc</option>
+                         <option value="Egypte">Egypte</option>
+                    </optgroup>
+                  </select>
+                   </fieldset>
+               </p>
+            </form>
+           <h1> Ma premiere page </h1>
+           <img src="duval.jpeg"/>
+        </p>
+        <h2 class="image"> A quoi correspond cette image?</h2>
+        <p><input type="submit" value="envoyer"/></p>
+        <p><input type="reset" value="reinitialise"/></p>
+    </body>
+</html>
